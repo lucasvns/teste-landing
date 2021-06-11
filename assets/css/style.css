@@ -169,7 +169,7 @@ body{
 }
 
 #banner-section{
-    background: url(../img/teste.png) center top;
+    background: url(../img/girl-banner.png) center top;
     background-size: cover;
     min-height: 984px;
     margin-top: 130px;
@@ -319,7 +319,7 @@ body{
     }
 
     #banner-section {
-        background: url(../img/teste.png) center top;
+        background: url(../img/girl-banner.png) center top;
         background-size: cover;
         min-height: 710px;
         margin-top: 130px;
