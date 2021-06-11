@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body{
+    background: #E2E2E2;
+}
+
+.title{
+    color: #931854;
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.description{
+    color: #931854;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.float {
+    width: 172px;
+    height: 85px;
+    position: fixed;
+    bottom: 40px;
+    background: #931854;
+    color: #fff;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding:  10px 20px 11px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.float:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-pc{
+  padding: 0px 140px 0px 140px;
+  min-height: 90PX;
+  background: #E2E2E2;
+}
+
+.navbar-brand{
+    color: #931854 !important;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #931854;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 500px;
+  margin: -100px 0 0 0;
+  padding: 110px 64px 0px 32px;
+  min-height: 825px;
+  right: -100px;
+  background: #931854;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+  
+#menu li {
+  padding: 50px 0px 0px 0px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+
+}
+
+.navbar-mobile img{
+    padding-left: 45px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: scale(1, 1);
+  opacity: 1;
+} 
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#banner-section{
+    background: url(../img/teste.png) center top;
+    background-size: cover;
+    min-height: 984px;
+    margin-top: 130px;
+    position: relative;
+}
+
+#banner-section .btn-top{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-banner{
+    padding-top: 120px;
+    padding-left: 140px;
+}
+
+#banner-section .title,
+#banner-section .description{
+    color: #0B6699;
+}
+
+#banner-section #girl-banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+#testimony-section{
+    min-height: 1146px;
+    margin-top: 100px;
+}
+
+#testimony-section .col-md-9{
+    margin-top: 50px;
+}
+
+.testimony-div{
+    min-height: 240px;
+    width: 550px;
+    background: white;
+    margin: 90px auto 0px auto;
+    padding: 60px  26px 28px  29px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.testimony-div img{
+    position: absolute;
+    top: -40px;
+    right: 26px;
+}
+
+.testimony-div .title{
+    font-size: 30px;
+    text-align: left;
+}
+
+.testimony-div .description{
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#footer-section{
+    margin-top: 100px;
+    min-height: 1000px;
+}
+
+#footer-section .description{
+    padding: 50px 220px 0px 0px;
+}
+
+#footer-section .title{
+    padding-top: 100px;
+}
+
+#footer-section .box{
+    background: white;
+    padding: 28px 40px 26px 40px;
+    min-height: 245px;
+    margin: 90px auto 0 auto;
+    width: 536px;
+    border-radius: 10px;
+}
+
+#footer-section .box .title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#footer-section .box .description{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+#footer-section .box .sociais{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#footer-section .box #facebook{
+    margin-right: auto;
+}
+
+#footer-section .box #linkedin{
+    margin-left: auto;
+
+}
+
+.btn-top{
+    display: flex;
+    margin-top: 95px;
+
+}
+
+.btn-top img{
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .navbar-pc {
+        padding: 0px 20px 0px 20px;
+        min-height: 130PX;
+        background: #E2E2E2;
+    }
+
+    #banner-section .title {
+        font-size: 80px;
+        font-weight: 900;
+    }
+
+    .text-banner {
+        padding-top: 0px;
+        padding-left: 10px;
+    }
+
+    #banner-section {
+        background: url(../img/teste.png) center top;
+        background-size: cover;
+        min-height: 710px;
+        margin-top: 130px;
+        position: relative;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .testimony-div {
+        width: 100%;
+    }
+
+    #footer-section .description {
+        padding: 50px 0px 0px 0px;
+    }
+
+    #footer-section .btn-top {
+        display: flex;
+        margin-top: 95px;
+        margin-bottom: 50px;
+    }
+
+ 
+    
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar-mobile{
+        display: block;
+    }
+    .navbar-pc{
+        display: none;
+    }
+
+    #menu {
+        width: 300px;
+    }
+
+    .btn-top {
+        margin-top: 50px;
+    }
+
+    .float{
+        width: 94px;
+        height: 54px;
+        font-size: 15px;
+        padding: 5px 0px 0px 0px;
+    }
+
+    #banner-section{
+        background: url(../img/girl-banner-mobile.png) center top;
+        background-size: cover;
+        margin-top: 0px;
+        min-height: 666px;
+    }
+
+    .text-banner .description br{
+        display: none;
+    }
+
+    .text-banner {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .text-banner .title {
+        font-size: 50px;
+        padding: 120px 37px 0px 37px;
+    }
+
+    .text-banner .description {
+        font-size: 15px;
+        color: white !important;
+        padding: 120px 37px 0px 37px;
+    }
+
+    #banner-section .btn-top {
+        bottom: 10px;
+    }
+
+    .testimony-div {
+        width: 100%;
+        padding: 80px 26px 28px 29px;
+    }
+
+    .testimony-div img {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -78px;
+    }
+
+    .testimony-div .title {
+        text-align: center;
+    }    
+
+    .testimony-div .description {
+        text-align: center;
+    }  
+
+    #footer-section .title {
+        font-size: 50px;
+        padding: 100px 34px 0px 54px;
+    }
+
+    #footer-section .description {
+        padding: 50px 34px 0px 54px;
+    }
+
+    #footer-section .box {
+        background: white;
+        padding: 28px 40px 26px 40px;
+        min-height: 245px;
+        margin: 90px auto 0 auto;
+        width: 100%;
+    }
+
+    #footer-section .btn-top {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .text-banner .description {
+        padding: 95px 37px 0px 37px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .text-banner .description {
+        padding: 90px 15px 0px 15px;
+    }
+
+    .text-banner .title {
+        padding: 120px 15px 0px 15px;
+    }
+
+    #footer-section .title {
+        padding: 100px 15px 0px 15px;
+    }
+
+    #footer-section .description {
+        padding: 50px 15px 0px 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
